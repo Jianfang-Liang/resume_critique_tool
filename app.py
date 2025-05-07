@@ -21,7 +21,7 @@ def get_resume_feedback(resume_text):
     prompt = f"You are an expert career advisor. Please provide constructive, detailed feedback on this resume:\n\n{resume_text}"
 
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are a helpful and professional resume critique assistant."},
             {"role": "user", "content": prompt}
